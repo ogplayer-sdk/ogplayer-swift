@@ -158,7 +158,13 @@ final class FWAdsProvider: NSObject, AdsProvider {
 
     func contentDidComplete() {
         adContext?.setVideoState(.completed)
-        guard currentSlot == nil, !postrollSlots.isEmpty else { return }
+        guard currentSlot == nil else { return }
+        guard !postrollSlots.isEmpty else {
+            // Nothing left to play — the schedule is settled (playlist
+            // advance and any host logic keyed on all-ads-completed).
+            callbacks?.onAllAdsCompleted()
+            return
+        }
         let slot = postrollSlots.removeFirst()
         play(slot: slot, breakType: .postroll)
     }
@@ -344,6 +350,8 @@ final class FWAdsProvider: NSObject, AdsProvider {
         case .postroll where !postrollSlots.isEmpty:
             play(slot: postrollSlots.removeFirst(), breakType: .postroll)
         default:
+            // The last postroll just finished — the schedule is settled.
+            if breakType == .postroll { callbacks?.onAllAdsCompleted() }
             callbacks?.onContentResumeRequested()
             adContext?.setVideoState(.playing)
         }
