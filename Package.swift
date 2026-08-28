@@ -1,7 +1,7 @@
 // swift-tools-version:5.9
 // PUBLIC distribution manifest for the OGPlayer iOS SDK — binary XCFrameworks
 // only, no source. Lives in the public repo; zips are GitHub Release assets.
-// v1.0.2 and https://github.com/ogplayer-sdk/ogplayer-swift/releases/download get filled by the release script.
+// v1.0.3 and https://github.com/ogplayer-sdk/ogplayer-swift/releases/download get filled by the release script.
 import PackageDescription
 
 let package = Package(
@@ -20,14 +20,14 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "OGPlayerCore",
-            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.0.2/OGPlayerCore.xcframework.zip",
-            checksum: "a5d01d988488e3f345a948d38f9ac158d2cb1a36deee7c895bbe44d21ea7bdfd"),
+            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.0.3/OGPlayerCore.xcframework.zip",
+            checksum: "2864a54627a931bd2c0e93a2a7c5d53cb775c06ca0bc04ab11239cd3a1ef120c"),
         .binaryTarget(name: "OGPlayerUIBinary",
-            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.0.2/OGPlayerUI.xcframework.zip",
-            checksum: "60e39be0ea049173f5a7ca7f451738630d867e7123f25c41054fff814c31f09b"),
+            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.0.3/OGPlayerUI.xcframework.zip",
+            checksum: "edce1b37abfdef93fc89c0ef17375475955034e73eeb10ca58249d3c6f22f877"),
         .binaryTarget(name: "OGPlayerAdsIMABinary",
-            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.0.2/OGPlayerAdsIMA.xcframework.zip",
-            checksum: "ccf35a2893a88da1700f123d59a1dcfe60dc613957868421185d0949fda412d8"),
+            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.0.3/OGPlayerAdsIMA.xcframework.zip",
+            checksum: "524d51a3bbf440a091af28d2b36e31b83bce1d748d94f4b1466a3a632bdedeac"),
         // Wrappers carry the inter-framework and third-party dependencies
         // (binaryTarget itself cannot declare dependencies).
         .target(name: "OGPlayerUIWrapper",
