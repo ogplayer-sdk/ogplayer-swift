@@ -1,7 +1,7 @@
-// OGplayer FreeWheel adapter — ships as SOURCE, not as a package product.
+// OGPlayer FreeWheel adapter — ships as SOURCE, not as a package product.
 //
 // NOTE FOR DEVELOPERS: FreeWheel's AdManager SDK (AdManager.framework) is
-// licensed to FreeWheel customers, so OGplayer cannot bundle it — and Swift
+// licensed to FreeWheel customers, so OGPlayer cannot bundle it — and Swift
 // Package Manager cannot compile a target against a framework it isn't
 // allowed to ship (there is no `compileOnly` like on Android, where the
 // equivalent provider is the published `ogplayer-ads-freewheel` module).
@@ -24,7 +24,7 @@ import AVFoundation
 import AdManager
 import OGPlayerCore
 
-/// FreeWheel AdManager implementation of the OGplayer ads SPI.
+/// FreeWheel AdManager implementation of the OGPlayer ads SPI.
 ///
 /// Set it on the player and pass a `FreewheelConfig` as the item's ad breaks:
 ///

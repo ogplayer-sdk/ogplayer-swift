@@ -1,13 +1,13 @@
-# FreeWheel adapter for OGplayer (iOS)
+# FreeWheel adapter for OGPlayer (iOS)
 
-`FWAdsProvider.swift` implements OGplayer's `AdsProvider` SPI on top of
+`FWAdsProvider.swift` implements OGPlayer's `AdsProvider` SPI on top of
 FreeWheel's AdManager SDK — the iOS counterpart of the Android
 `ogplayer-ads-freewheel` module.
 
 ## Why source, not a package product
 
 FreeWheel's `AdManager.framework` is licensed to FreeWheel customers and
-cannot be redistributed with OGplayer. Swift Package Manager has no
+cannot be redistributed with OGPlayer. Swift Package Manager has no
 `compileOnly` (unlike Gradle, which lets the Android module compile against
 FreeWheel without shipping it), so a published package target importing
 `AdManager` would fail to build for anyone without the framework. The

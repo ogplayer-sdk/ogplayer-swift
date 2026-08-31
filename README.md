@@ -1,8 +1,8 @@
 # OGPlayer — iOS SDK
 
 Native video playback for iOS: AVFoundation engine, SwiftUI player UI, one
-API mirrored across Android, iOS and web. HLS (VOD, live, DVR), FairPlay
-DRM with rotating tokens, offline downloads with offline DRM,
+API mirrored across Android, iOS, web and React Native. HLS (VOD, live,
+DVR), FairPlay DRM with rotating tokens, offline downloads with offline DRM,
 picture-in-picture, Google IMA & FreeWheel ads, subtitles & audio tracks,
 AirPlay, content ratings, watermark slots, themeable chrome.
 
@@ -34,7 +34,7 @@ var body: some View {
 }
 ```
 
-Docs: https://ogplayer.tv/docs · Live demo: https://ogplayer.tv
+Docs: https://ogplayer.tv/docs · Live demo: https://demo.ogplayer.tv
 
 ## FreeWheel
 
