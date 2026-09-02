@@ -1,6 +1,6 @@
 # OGPlayer — iOS SDK
 
-Native video playback for iOS: AVFoundation engine, SwiftUI player UI, one HLS (VOD, live,
+Native video playback for iOS: AVFoundation engine, SwiftUI player UI. HLS (VOD, live,
 DVR), FairPlay DRM with rotating tokens, offline downloads with offline DRM,
 picture-in-picture, Google IMA & FreeWheel ads, subtitles & audio tracks,
 AirPlay, content ratings, watermark slots, themeable chrome.
