@@ -5,6 +5,8 @@ DVR), FairPlay DRM with rotating tokens, offline downloads with offline DRM,
 picture-in-picture, Google IMA & FreeWheel ads, subtitles & audio tracks,
 AirPlay, content ratings, watermark slots, themeable chrome.
 
+Release notes: https://ogplayer.tv/docs/reference/changelog/ (also on each GitHub release).
+
 ## Install
 
 Xcode → *File → Add Package Dependencies…* →
