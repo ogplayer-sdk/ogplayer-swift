@@ -19,14 +19,14 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(name: "OGPlayerCore",
-            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.2.1/OGPlayerCore.xcframework.zip",
-            checksum: "8a4a05fc4c22a9ff58732bb76a18609a591b9cf3e55f5494fb8fabb7db8fa66f"),
+            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.2.2/OGPlayerCore.xcframework.zip",
+            checksum: "e697dd1ef7ba7987bac5124fd4f801b87964b7945b33a29d7d6fc8cf564eb20b"),
         .binaryTarget(name: "OGPlayerUIBinary",
-            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.2.1/OGPlayerUI.xcframework.zip",
-            checksum: "426144e6b22c1abe1ab2a54d688957f69e324adfcc74e8c1af78fb23c4a152c3"),
+            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.2.2/OGPlayerUI.xcframework.zip",
+            checksum: "f4a0672be4cefe9763b3ef854e68feb5ba9a5ffe2ea9bc005ce2abfbf7c4813b"),
         .binaryTarget(name: "OGPlayerAdsIMABinary",
-            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.2.1/OGPlayerAdsIMA.xcframework.zip",
-            checksum: "ac20a8a49ab77f57a1517ff66b3504ffc2e8023589e06c1d63ec331b2c520f52"),
+            url: "https://github.com/ogplayer-sdk/ogplayer-swift/releases/download/v1.2.2/OGPlayerAdsIMA.xcframework.zip",
+            checksum: "40213d0c1af2266c54a0c5c7406131890f32160a2505474e3f185ec32408cb56"),
         // Wrappers carry the inter-framework and third-party dependencies
         // (binaryTarget itself cannot declare dependencies).
         .target(name: "OGPlayerUIWrapper",
