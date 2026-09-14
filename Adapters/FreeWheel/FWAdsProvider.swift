@@ -3,8 +3,7 @@
 // NOTE FOR DEVELOPERS: FreeWheel's AdManager SDK (AdManager.framework) is
 // licensed to FreeWheel customers, so OGPlayer cannot bundle it — and Swift
 // Package Manager cannot compile a target against a framework it isn't
-// allowed to ship (there is no `compileOnly` like on Android, where the
-// equivalent provider is the published `ogplayer-ads-freewheel` module).
+// allowed to ship.
 // This adapter is therefore distributed as a source file:
 //
 //  1. Obtain AdManager.framework from your FreeWheel account (MRM support
